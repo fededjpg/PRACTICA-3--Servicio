@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-            <h1>Calcular Área de un Cuadrado</h1>
+            <h1 class="text-center">Calcular Área de un Cuadrado</h1>
         <div class="container" >
         <asp:TextBox ID="InputAreaCuadrado" runat="server"></asp:TextBox>
             <p>
@@ -24,7 +24,7 @@
        </div>
         <hr />
   
-        <h1>Calcular Área de un Triángulo</h1>
+        <h1 class="text-center">Calcular Área de un Triángulo</h1>
         <div class="container">
             <p>
             <asp:TextBox ID="InputBaseTriangulo" runat="server"></asp:TextBox>
@@ -34,10 +34,10 @@
             <b> <span>Resultado:</span></b> <asp:Label ID="ResulAreaTriangulo" runat="server"></asp:Label>
             </p>
 
-        <asp:Button ID="BtnAreaTriangulo" runat="server" Text="Calcular Área Triángulo" OnClick="BtnAreaTriangulo_Click" />
+        <asp:Button ID="BtnAreaTriangulo" CssClass="btn btn-primary" runat="server" Text="Calcular Área Triángulo" OnClick="BtnAreaTriangulo_Click" />
             </div>
         <hr />
-            <h1>Calcular Área de un Círculo</h1>
+            <h1 class="text-center">Calcular Área de un Círculo</h1>
         <div class="container">
             <p>
                 <asp:TextBox ID="InputAreaCirculo" runat="server" ></asp:TextBox>
@@ -45,7 +45,7 @@
             <p>
                <b><span>Resultado:</span></b> <asp:Label ID="ResultadoAreaCirculo" runat="server"></asp:Label>
             </p>
-            <p><asp:Button ID="BtnAreaCirculo" runat="server" Text="Calcular Área círculo" OnClick="BtnAreaCirculo_Click" /></p>
+            <p><asp:Button CssClass="btn btn-primary" ID="BtnAreaCirculo" runat="server" Text="Calcular Área círculo" OnClick="BtnAreaCirculo_Click" /></p>
         </div>
     </form>
     
