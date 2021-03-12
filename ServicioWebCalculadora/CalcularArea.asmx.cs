@@ -19,7 +19,7 @@ namespace ServicioWebCalculadora
      public double resultado;
 
         [WebMethod]
-        public double AreaCuadrado(Double number) => resultado = number * number;
+        public double AreaCuadrado(Double lado1, Double lado2) => resultado = lado1 * lado2;
 
         [WebMethod]
         public double AreaTriangulo(Double bases, Double altura) => resultado = bases * altura / 2;

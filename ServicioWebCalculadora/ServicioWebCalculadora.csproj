@@ -79,7 +79,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Web.config" />
-    <None Include="Connected Services\CalculaAreas\CalcularArea.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalcularArea.asmx.cs">
@@ -101,6 +100,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\CalculaAreas\CalcularArea.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

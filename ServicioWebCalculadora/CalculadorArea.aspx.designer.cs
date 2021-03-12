@@ -24,13 +24,22 @@ namespace ServicioWebCalculadora
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control InputAreaCuadrado.
+        /// Control InputAreaCuadradoLado1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox InputAreaCuadrado;
+        protected global::System.Web.UI.WebControls.TextBox InputAreaCuadradoLado1;
+
+        /// <summary>
+        /// Control InputAreaCuadradoLado2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox InputAreaCuadradoLado2;
 
         /// <summary>
         /// Control Result.

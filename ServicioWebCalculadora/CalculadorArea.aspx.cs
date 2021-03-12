@@ -17,7 +17,7 @@ namespace ServicioWebCalculadora
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Result.Text = "El Área del Cuadrado es: " + Calcular.AreaCuadrado(Convert.ToDouble(InputAreaCuadrado.Text)).ToString();
+            Result.Text = "El Área del Cuadrado es: " + Calcular.AreaCuadrado(Convert.ToDouble(InputAreaCuadradoLado1.Text), Convert.ToDouble(InputAreaCuadradoLado2.Text)).ToString();
         }
 
         protected void BtnAreaTriangulo_Click(object sender, EventArgs e)

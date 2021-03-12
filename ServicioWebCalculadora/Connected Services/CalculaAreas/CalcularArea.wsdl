@@ -5,7 +5,8 @@
       <s:element name="AreaCuadrado">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="lado1" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="lado2" type="s:double" />
           </s:sequence>
         </s:complexType>
       </s:element>

@@ -16,10 +16,10 @@ namespace ServicioWebCalculadora.CalculaAreas {
     public interface CalcularAreaSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AreaCuadrado", ReplyAction="*")]
-        double AreaCuadrado(double number);
+        double AreaCuadrado(double lado1, double lado2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AreaCuadrado", ReplyAction="*")]
-        System.Threading.Tasks.Task<double> AreaCuadradoAsync(double number);
+        System.Threading.Tasks.Task<double> AreaCuadradoAsync(double lado1, double lado2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AreaTriangulo", ReplyAction="*")]
         double AreaTriangulo(double bases, double altura);
@@ -61,12 +61,12 @@ namespace ServicioWebCalculadora.CalculaAreas {
                 base(binding, remoteAddress) {
         }
         
-        public double AreaCuadrado(double number) {
-            return base.Channel.AreaCuadrado(number);
+        public double AreaCuadrado(double lado1, double lado2) {
+            return base.Channel.AreaCuadrado(lado1, lado2);
         }
         
-        public System.Threading.Tasks.Task<double> AreaCuadradoAsync(double number) {
-            return base.Channel.AreaCuadradoAsync(number);
+        public System.Threading.Tasks.Task<double> AreaCuadradoAsync(double lado1, double lado2) {
+            return base.Channel.AreaCuadradoAsync(lado1, lado2);
         }
         
         public double AreaTriangulo(double bases, double altura) {

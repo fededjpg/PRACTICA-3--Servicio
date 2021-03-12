@@ -13,7 +13,8 @@
     <form id="form1" runat="server">
             <h1 class="text-center">Calcular Área de un Cuadrado</h1>
         <div class="container" >
-        <asp:TextBox ID="InputAreaCuadrado" runat="server"></asp:TextBox>
+        <asp:TextBox ID="InputAreaCuadradoLado1" runat="server" PlaceHolder="Ingrese Lado 1" ></asp:TextBox>
+            <asp:TextBox ID="InputAreaCuadradoLado2" runat="server" PlaceHolder="Ingrese Lado 2" ></asp:TextBox>
             <p>
                         <b><span>Resultado:</span></b><asp:Label ID="Result" runat="server"></asp:Label>
 
@@ -27,8 +28,8 @@
         <h1 class="text-center">Calcular Área de un Triángulo</h1>
         <div class="container">
             <p>
-            <asp:TextBox ID="InputBaseTriangulo" runat="server"></asp:TextBox>
-             <asp:TextBox ID="InputAlturaTriangulo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="InputBaseTriangulo" PlaceHolder="Ingresar Base" runat="server"></asp:TextBox>
+             <asp:TextBox ID="InputAlturaTriangulo" PlaceHolder="Ingresar Altura" runat="server"></asp:TextBox>
             </p>
         <p>
             <b> <span>Resultado:</span></b> <asp:Label ID="ResulAreaTriangulo" runat="server"></asp:Label>
@@ -40,7 +41,7 @@
             <h1 class="text-center">Calcular Área de un Círculo</h1>
         <div class="container">
             <p>
-                <asp:TextBox ID="InputAreaCirculo" runat="server" ></asp:TextBox>
+                <asp:TextBox ID="InputAreaCirculo" PlaceHolder="Ingresar Radio" runat="server" ></asp:TextBox>
             </p>
             <p>
                <b><span>Resultado:</span></b> <asp:Label ID="ResultadoAreaCirculo" runat="server"></asp:Label>
